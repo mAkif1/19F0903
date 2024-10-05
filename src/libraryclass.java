@@ -1,8 +1,16 @@
 
-public class libraryclass {
+import java.util.ArrayList;
+   import java.util.List;
 
-	public libraryclass() {
-		// TODO Auto-generated constructor stub
-	}
+   public class libraryclass {
+       private List<String> books = new ArrayList<>();
 
-}
+       public void addBook(String bookName) {
+           books.add(bookName);
+           System.out.println(bookName + " added to libraryclass.");
+       }
+
+       public void listBooks() {
+           System.out.println("Books in libraryclass: " + books);
+       }   }
+
