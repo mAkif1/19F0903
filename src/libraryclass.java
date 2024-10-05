@@ -12,5 +12,10 @@ import java.util.ArrayList;
 
        public void listBooks() {
            System.out.println("Books in libraryclass: " + books);
-       }   }
+       }  
+       public boolean searchBook(String bookName) {
+           return books.contains(bookName);
+       }
+
+   }
 
